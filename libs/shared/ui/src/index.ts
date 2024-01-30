@@ -1,1 +1,1 @@
-export * from './lib/ui/preloader.component';
+export * from './lib/preloader/';
