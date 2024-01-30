@@ -3,6 +3,7 @@
   "compilerOptions": {
     "rootDir": ".",
     "sourceMap": true,
+    "inlineSources": true,
     "declaration": false,
     "moduleResolution": "node",
     "emitDecoratorMetadata": true,
@@ -15,9 +16,20 @@
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
-      "@skoer-hr-solutions/core": ["core/src/index.ts"],
-      "@skoer-hr-solutions/data-access": ["shared/data-access/src/index.ts"],
-      "@skoer-hr-solutions/ui": ["shared/ui/src/index.ts"]
+      "@skoer-hr-solutions/core": ["libs/core/src/index.ts"],
+      "@skoer-hr-solutions/data-access": [
+        "libs/shared/data-access/src/index.ts"
+      ],
+      "@skoer-hr-solutions/layout/container": [
+        "libs/layout/container/src/index.ts"
+      ],
+      "@skoer-hr-solutions/layout/header": ["libs/layout/header/src/index.ts"],
+      "@skoer-hr-solutions/layout/shell": ["libs/layout/shell/src/index.ts"],
+      "@skoer-hr-solutions/layout/side-menu": [
+        "libs/layout/side-menu/src/index.ts"
+      ],
+      "@skoer-hr-solutions/shared/pipes": ["libs/shared/pipes/src/index.ts"],
+      "@skoer-hr-solutions/ui": ["libs/shared/ui/src/index.ts"]
     }
   },
   "exclude": ["node_modules", "tmp"]
