@@ -2,7 +2,15 @@
   "name": "@skoer-hr-solutions/source",
   "version": "0.0.0",
   "license": "MIT",
-  "scripts": {},
+  "scripts": {
+    "start": "nx serve resumly",
+    "build": "nx build resumly",
+    "test": "nx test resumly",
+    "lint": "nx lint resumly",
+    "format": "nx format:write --projects=resumly",
+    "format:check": "nx format:check --projects=resumly",
+    "e2e": "nx e2e resumly"
+  },
   "private": true,
   "dependencies": {
     "@angular/animations": "~17.1.0",
