@@ -2,7 +2,6 @@ import { InjectionToken, Provider } from "@angular/core";
 import { LayoutSideMenuConfig } from "../models";
 
 const DEFAULT_SIDE_MENU_CONFIG = {
-    appLabel: 'Skoer HR Solutions',
     items: [],
 } satisfies LayoutSideMenuConfig;
 

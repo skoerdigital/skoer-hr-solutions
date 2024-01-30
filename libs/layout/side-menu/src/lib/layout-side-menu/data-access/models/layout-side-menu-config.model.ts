@@ -6,5 +6,4 @@ interface MenuItem {
 
 export interface LayoutSideMenuConfig {
     items: MenuItem[];
-    appLabel: string;
 }

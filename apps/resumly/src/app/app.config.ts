@@ -1,4 +1,4 @@
-import { ApplicationConfig } from '@angular/core';
+import { APP_INITIALIZER, ApplicationConfig } from '@angular/core';
 import { provideRouter } from '@angular/router';
 import { appRoutes } from './app.routes';
 import { provideHttpClient } from '@angular/common/http';
@@ -6,6 +6,7 @@ import { provideStore } from '@ngrx/store';
 import { provideEffects } from '@ngrx/effects';
 import { providePreloaderInterceptor } from '@skoer-hr-solutions/core';
 import { provideSideMenu } from '@skoer-hr-solutions/layout/side-menu';
+import { provideHeader } from 'libs/layout/header/src/lib/layout-header/data-access/providers';
 
 export const appConfig: ApplicationConfig = {
   providers: [
@@ -42,7 +43,7 @@ export const appConfig: ApplicationConfig = {
             </svg>` 
         },
       ],
-      appLabel: 'Resumly',
-    })
+    }),
+    provideHeader({ appName: 'Resumly' }),
   ],
 };

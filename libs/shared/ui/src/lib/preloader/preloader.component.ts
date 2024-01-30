@@ -6,7 +6,7 @@ import { PreloaderService } from '@skoer-hr-solutions/data-access';
   selector: 'skoer-hr-solutions-preloader',
   template: `
     <div
-      class="fixed inset-0 flex items-center justify-center bg-gray-900 h-screen w-screen"
+      class="fixed inset-0 flex items-center justify-center bg-opacity-95 bg-gray-900 h-screen w-screen z-50"
     >
       <ng-container *ngIf="isVisible$ | async">
         <div role="status">

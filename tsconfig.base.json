@@ -20,6 +20,11 @@
       "@skoer-hr-solutions/data-access": [
         "libs/shared/data-access/src/index.ts"
       ],
+      "@skoer-hr-solutions/layout/container": [
+        "libs/layout/container/src/index.ts"
+      ],
+      "@skoer-hr-solutions/layout/header": ["libs/layout/header/src/index.ts"],
+      "@skoer-hr-solutions/layout/shell": ["libs/layout/shell/src/index.ts"],
       "@skoer-hr-solutions/layout/side-menu": [
         "libs/layout/side-menu/src/index.ts"
       ],
