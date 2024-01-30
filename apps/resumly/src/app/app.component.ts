@@ -1,14 +1,16 @@
 import { Component } from '@angular/core';
 import { RouterModule } from '@angular/router';
-import { NxWelcomeComponent } from './nx-welcome.component';
+
+import { initFlowbite } from 'flowbite';
 
 @Component({
   standalone: true,
-  imports: [NxWelcomeComponent, RouterModule],
-  selector: 'angular-monorepo-root',
+  imports: [RouterModule],
+  selector: 'skoer-hr-solutions-root',
   templateUrl: './app.component.html',
-  styleUrl: './app.component.scss',
 })
 export class AppComponent {
-  title = 'resumly';
+  ngOnInit(): void {
+    initFlowbite();
+  }
 }
