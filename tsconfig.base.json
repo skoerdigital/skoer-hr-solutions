@@ -15,7 +15,9 @@
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
-      "@skoer-hr-solutions/core": ["core/src/index.ts"]
+      "@skoer-hr-solutions/core": ["core/src/index.ts"],
+      "@skoer-hr-solutions/data-access": ["shared/data-access/src/index.ts"],
+      "@skoer-hr-solutions/ui": ["shared/ui/src/index.ts"]
     }
   },
   "exclude": ["node_modules", "tmp"]

@@ -1,1 +1,2 @@
-export * from './lib/core/core.component';
+export * from './lib/core/interceptors';
+export * from './test-setup';
