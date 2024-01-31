@@ -1,9 +1,5 @@
 import { FormArray, FormControl, FormGroup } from '@angular/forms';
 
-export type BasicForm<T> = {
-    [P in keyof T]: FormControl<T[P]>;
-};
-
 // TODO: Related to https://github.com/angular/angular/issues/46864
 // This might be a replacement for BasicForm helper
 // Consider to replace all occurances with propsed solution and/or wait until Angular release above-mentioned candidate
