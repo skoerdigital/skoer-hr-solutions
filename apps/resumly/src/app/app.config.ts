@@ -4,7 +4,7 @@ import { appRoutes } from './app.routes';
 import { provideHttpClient } from '@angular/common/http';
 import { provideStore } from '@ngrx/store';
 import { provideEffects } from '@ngrx/effects';
-import { providePreloaderInterceptor } from '@skoer-hr-solutions/core';
+import { provideApiUrl, provideFlowbite, providePreloaderInterceptor } from '@skoer-hr-solutions/core';
 import { provideSideMenu } from '@skoer-hr-solutions/layout/side-menu';
 import { provideHeader } from 'libs/layout/header/src/lib/layout-header/data-access/providers';
 
@@ -15,6 +15,7 @@ export const appConfig: ApplicationConfig = {
     provideRouter(appRoutes),
     provideHttpClient(),
     providePreloaderInterceptor(),
+    provideFlowbite(),
     provideSideMenu({
       items: [
         { 
@@ -45,5 +46,6 @@ export const appConfig: ApplicationConfig = {
       ],
     }),
     provideHeader({ appName: 'Resumly' }),
+    provideApiUrl('https://api.escuelajs.co/api/v1'),
   ],
 };

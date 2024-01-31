@@ -1,1 +1,1 @@
-export * from './lib/preloader/';
+export * from './lib/preloader';
