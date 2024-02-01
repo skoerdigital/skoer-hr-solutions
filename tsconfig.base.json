@@ -16,10 +16,12 @@
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
+      "@skoer-hr-solutions/auth": ["libs/auth/src/index.ts"],
       "@skoer-hr-solutions/core": ["libs/core/src/index.ts"],
       "@skoer-hr-solutions/data-access": [
         "libs/shared/data-access/src/index.ts"
       ],
+      "@skoer-hr-solutions/error-page": ["libs/error-page/src/index.ts"],
       "@skoer-hr-solutions/layout/container": [
         "libs/layout/container/src/index.ts"
       ],
@@ -28,8 +30,13 @@
       "@skoer-hr-solutions/layout/side-menu": [
         "libs/layout/side-menu/src/index.ts"
       ],
+      "@skoer-hr-solutions/shared/directives": [
+        "libs/shared/directives/src/index.ts"
+      ],
       "@skoer-hr-solutions/shared/pipes": ["libs/shared/pipes/src/index.ts"],
-      "@skoer-hr-solutions/ui": ["libs/shared/ui/src/index.ts"]
+      "@skoer-hr-solutions/shared/tokens": ["libs/shared/tokens"],
+      "@skoer-hr-solutions/shared/ui": ["libs/shared/ui/src/index.ts"],
+      "@skoer-hr-solutions/shared/utils": ["libs/shared/utils/src/index.ts"]
     }
   },
   "exclude": ["node_modules", "tmp"]

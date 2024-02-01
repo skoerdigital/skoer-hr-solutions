@@ -1,2 +1,2 @@
 export * from './lib/core/interceptors';
-export * from './test-setup';
+export * from './lib/core/providers';
