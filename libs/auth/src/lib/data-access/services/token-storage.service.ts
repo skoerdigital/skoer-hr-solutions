@@ -1,5 +1,5 @@
 import { Injectable, inject } from '@angular/core';
-import { JWT_STORAGE_TOKEN } from '../tokens';
+import { JWT_STORAGE_TOKEN } from '../../utils/tokens';
 
 const TOKEN_KEY = 'auth-token';
 const REFRESHTOKEN_KEY = 'auth-refreshtoken';

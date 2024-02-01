@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 import { RouterModule } from '@angular/router';
 import { LayoutShellComponent } from '@skoer-hr-solutions/layout/shell';
-import { PreloaderComponent } from '@skoer-hr-solutions/ui';
+import { PreloaderComponent } from '@skoer-hr-solutions/shared/ui';
 
 @Component({
   standalone: true,

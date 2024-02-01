@@ -6,9 +6,9 @@ import { toObservable } from '@angular/core/rxjs-interop';
 import { Observable, throwError } from 'rxjs';
 import { catchError, filter, finalize, switchMap, take } from 'rxjs/operators';
 
-import { AuthorizationService, TokenStorageService } from '../data-access/services';
-import { AuthorizationInterceptorProviderConfig, TokenResponse } from '../data-access/models';
-import { JWT_STORAGE_ALIASES_TOKEN, JWT_STORAGE_TOKEN } from '../data-access/tokens';
+import { AuthorizationService, TokenStorageService } from '../services';
+import { AuthorizationInterceptorProviderConfig, TokenResponse } from '../models';
+import { JWT_STORAGE_ALIASES_TOKEN, JWT_STORAGE_TOKEN } from '../../utils/tokens';
 
 
 const TOKEN_HEADER_KEY = 'x-access-token';

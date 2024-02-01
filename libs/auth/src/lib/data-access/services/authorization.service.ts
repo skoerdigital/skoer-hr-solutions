@@ -3,7 +3,7 @@ import { HttpClient } from '@angular/common/http';
 import { Observable, asyncScheduler, observeOn, of } from 'rxjs';
 
 import { LoginRequest, RefreshTokenRequest, TokenResponse } from '../models';
-import { API_URL } from '@skoer-hr-solutions/shared/tokens';
+import { API_URL } from 'libs/shared/utils/src/lib/tokens';
 
 @Injectable({
   providedIn: 'root'

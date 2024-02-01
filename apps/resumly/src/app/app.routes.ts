@@ -1,7 +1,7 @@
 import { Route } from '@angular/router';
 
 export const appRoutes: Route[] = [
-    { path: 'login', loadComponent: () => import('@skoer-hr-solutions/auth').then(m => m.AuthComponent) },
+    { path: 'login', loadChildren: () => import('@skoer-hr-solutions/auth').then(m => m.AUTH_ROUTES) },
     {
         path: '',
         children: [

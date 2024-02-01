@@ -7,14 +7,25 @@ import { provideEffects } from '@ngrx/effects';
 import { provideApiUrl, provideFlowbite, providePreloaderInterceptor } from '@skoer-hr-solutions/core';
 import { provideSideMenu } from '@skoer-hr-solutions/layout/side-menu';
 import { provideHeader } from 'libs/layout/header/src/lib/layout-header/data-access/providers';
+import { provideAuthInterceptor } from '@skoer-hr-solutions/auth';
+import { provideStoreDevtools } from '@ngrx/store-devtools';
 
 export const appConfig: ApplicationConfig = {
   providers: [
-    provideEffects(),
     provideStore(),
-    provideRouter(appRoutes),
+    provideEffects([]),
+    provideStoreDevtools({
+      maxAge: 25,
+    }),
     provideHttpClient(),
     providePreloaderInterceptor(),
+    provideAuthInterceptor({
+      aliases: {
+        tokenKey: 't3n',
+        refreshTokenKey: 'rt3n',
+      },
+      storage: localStorage,
+    }),
     provideFlowbite(),
     provideSideMenu({
       items: [
@@ -47,5 +58,6 @@ export const appConfig: ApplicationConfig = {
     }),
     provideHeader({ appName: 'Resumly' }),
     provideApiUrl('https://api.escuelajs.co/api/v1'),
+    provideRouter(appRoutes),
   ],
 };
